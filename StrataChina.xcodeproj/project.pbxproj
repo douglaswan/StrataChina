@@ -1,0 +1,263 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A5AB6597155945870056A410 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5AB6596155945870056A410 /* UIKit.framework */; };
+		A5AB6599155945870056A410 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5AB6598155945870056A410 /* Foundation.framework */; };
+		A5AB659B155945870056A410 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5AB659A155945870056A410 /* CoreGraphics.framework */; };
+		A5AB65A1155945870056A410 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A5AB659F155945870056A410 /* InfoPlist.strings */; };
+		A5AB65A3155945880056A410 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A5AB65A2155945880056A410 /* main.m */; };
+		A5AB65A7155945880056A410 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A5AB65A6155945880056A410 /* AppDelegate.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A5AB6592155945870056A410 /* StrataChina.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StrataChina.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5AB6596155945870056A410 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A5AB6598155945870056A410 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A5AB659A155945870056A410 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		A5AB659E155945870056A410 /* StrataChina-Info.plist */ = {isa = PBXFileReference; path = "StrataChina-Info.plist"; sourceTree = "<group>"; };
+		A5AB65A0155945870056A410 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A5AB65A2155945880056A410 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A5AB65A4155945880056A410 /* StrataChina-Prefix.pch */ = {isa = PBXFileReference; path = "StrataChina-Prefix.pch"; sourceTree = "<group>"; };
+		A5AB65A5155945880056A410 /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		A5AB65A6155945880056A410 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A5AB658F155945870056A410 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5AB6597155945870056A410 /* UIKit.framework in Frameworks */,
+				A5AB6599155945870056A410 /* Foundation.framework in Frameworks */,
+				A5AB659B155945870056A410 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A5AB6587155945870056A410 = {
+			isa = PBXGroup;
+			children = (
+				A5AB659C155945870056A410 /* StrataChina */,
+				A5AB6595155945870056A410 /* Frameworks */,
+				A5AB6593155945870056A410 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A5AB6593155945870056A410 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A5AB6592155945870056A410 /* StrataChina.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A5AB6595155945870056A410 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A5AB6596155945870056A410 /* UIKit.framework */,
+				A5AB6598155945870056A410 /* Foundation.framework */,
+				A5AB659A155945870056A410 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A5AB659C155945870056A410 /* StrataChina */ = {
+			isa = PBXGroup;
+			children = (
+				A5AB65A5155945880056A410 /* AppDelegate.h */,
+				A5AB65A6155945880056A410 /* AppDelegate.m */,
+				A5AB659D155945870056A410 /* Supporting Files */,
+			);
+			path = StrataChina;
+			sourceTree = "<group>";
+		};
+		A5AB659D155945870056A410 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A5AB659E155945870056A410 /* StrataChina-Info.plist */,
+				A5AB659F155945870056A410 /* InfoPlist.strings */,
+				A5AB65A2155945880056A410 /* main.m */,
+				A5AB65A4155945880056A410 /* StrataChina-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A5AB6591155945870056A410 /* StrataChina */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5AB65AA155945880056A410 /* Build configuration list for PBXNativeTarget "StrataChina" */;
+			buildPhases = (
+				A5AB658E155945870056A410 /* Sources */,
+				A5AB658F155945870056A410 /* Frameworks */,
+				A5AB6590155945870056A410 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StrataChina;
+			productName = StrataChina;
+			productReference = A5AB6592155945870056A410 /* StrataChina.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A5AB6589155945870056A410 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = A5AB658C155945870056A410 /* Build configuration list for PBXProject "StrataChina" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = A5AB6587155945870056A410;
+			productRefGroup = A5AB6593155945870056A410 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A5AB6591155945870056A410 /* StrataChina */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A5AB6590155945870056A410 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5AB65A1155945870056A410 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A5AB658E155945870056A410 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5AB65A3155945880056A410 /* main.m in Sources */,
+				A5AB65A7155945880056A410 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A5AB659F155945870056A410 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A5AB65A0155945870056A410 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A5AB65A8155945880056A410 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A5AB65A9155945880056A410 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A5AB65AB155945880056A410 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "StrataChina/StrataChina-Prefix.pch";
+				INFOPLIST_FILE = "StrataChina/StrataChina-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		A5AB65AC155945880056A410 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "StrataChina/StrataChina-Prefix.pch";
+				INFOPLIST_FILE = "StrataChina/StrataChina-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A5AB658C155945870056A410 /* Build configuration list for PBXProject "StrataChina" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5AB65A8155945880056A410 /* Debug */,
+				A5AB65A9155945880056A410 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A5AB65AA155945880056A410 /* Build configuration list for PBXNativeTarget "StrataChina" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5AB65AB155945880056A410 /* Debug */,
+				A5AB65AC155945880056A410 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A5AB6589155945870056A410 /* Project object */;
+}

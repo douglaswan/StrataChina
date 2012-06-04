@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1171" systemVersion="11E53" minimumToolsVersion="Xcode 4.1" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Sessions" representedClassName="Sessions" syncable="YES">
+        <attribute name="abstract" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="event" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="in_one_sentance" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="keynote" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="site" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="speaker" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sponsor" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="tea_break" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="time_end" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="time_start" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="track" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Speakers" representedClassName="Speakers" syncable="YES">
+        <attribute name="autobio" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="employer" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="is_keynote" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="photo_filename" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="session" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="website" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Sessions" positionX="160" positionY="192" width="128" height="240"/>
+        <element name="Speakers" positionX="160" positionY="192" width="128" height="180"/>
+    </elements>
+</model>

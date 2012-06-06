@@ -180,6 +180,7 @@
         NSError *readingSpeakerError = nil;
         NSArray *oldSpeakers = [self.managedObjectContext executeFetchRequest:speakerFetchRequest
                                                                         error:&readingSpeakerError];
+        
         if ((readingSpeakerError != nil) || ([oldSpeakers count] <= 0))
         {
             UIAlertView *loadingSpeakerErrorAlterView = [[UIAlertView alloc] initWithTitle:@"Loading Speakers Error"

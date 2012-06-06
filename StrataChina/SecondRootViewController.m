@@ -54,6 +54,11 @@
     self.secondTableView.dataSource = self;
     self.secondTableView.delegate = self;
     
+    //prevent the Tab bar covering the last cell of the tableView.
+    UIView *footer = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 1, 90)];
+    footer.backgroundColor = [UIColor clearColor];
+    self.secondTableView.tableFooterView = footer;
+
     [self.view addSubview:self.secondTableView];
     
     //read speakers from Core Data
@@ -110,10 +115,12 @@
     NSData *speakerImageData = [[NSData alloc] initWithContentsOfURL:speakerImageURL];
     UIImage *speakerUIImage = [UIImage imageWithData:speakerImageData];
     UIImageView *imageViewInCell = [[UIImageView alloc] initWithImage:speakerUIImage];
-    imageViewInCell.contentMode = UIViewContentModeScaleToFill;
-    imageViewInCell = (UIImageView *) [cell viewWithTag:0];
-    imageViewInCell.image = speakerUIImage;
-    
+//    imageViewInCell.contentMode = UIViewContentModeScaleToFill;
+//    imageViewInCell = (UIImageView *) [cell viewWithTag:0];
+//    imageViewInCell.image = speakerUIImage;
+    imageViewInCell.frame = CGRectMake(0, 0, 30, 40);
+    cell.accessoryView = imageViewInCell;
+        
     UILabel *label;
     label = (UILabel *)[cell viewWithTag:1];
     label.text = [[self.speakerArray objectAtIndex:indexPath.row] name];

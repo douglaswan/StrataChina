@@ -66,6 +66,11 @@
     self.firstTableView.dataSource = self;
     self.firstTableView.delegate = self;
     
+    //prevent the Tab bar covering the last cell of the tableView.
+    UIView *footer = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 1, 90)];
+    footer.backgroundColor = [UIColor clearColor];
+    self.firstTableView.tableFooterView = footer;
+    
     [self.view addSubview:self.firstTableView];
     
     //read Data from Core Data

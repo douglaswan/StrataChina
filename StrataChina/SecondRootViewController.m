@@ -8,6 +8,8 @@
 
 #import "SecondRootViewController.h"
 
+#import "SecondSecondViewController.h"
+
 #import "Speakers.h"
 
 @interface SecondRootViewController ()
@@ -38,6 +40,14 @@
         [[UINavigationBar appearance] setBackgroundImage:backroundImageNavigationBar
                                            forBarMetrics:UIBarMetricsDefault];
         self.navigationItem.title = nil;
+        
+        UIBarButtonItem *backButton = [[UIBarButtonItem alloc] initWithTitle:@"Back"
+                                                                       style:UIBarButtonItemStylePlain
+                                                                      target:self
+                                                                      action:nil];
+        backButton.tintColor = [UIColor redColor];
+        
+        self.navigationItem.BackBarButtonItem = backButton;
     }
     return self;
 }
@@ -47,18 +57,13 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     
-    self.secondTableView = [[UITableView alloc] initWithFrame:self.view.bounds
+    self.secondTableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, 320, 368)
                                                         style:UITableViewStylePlain];
     
-    self.secondTableView.rowHeight = 64;
+    self.secondTableView.rowHeight = 54;
     self.secondTableView.dataSource = self;
     self.secondTableView.delegate = self;
     
-    //prevent the Tab bar covering the last cell of the tableView.
-    UIView *footer = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 1, 90)];
-    footer.backgroundColor = [UIColor clearColor];
-    self.secondTableView.tableFooterView = footer;
-
     [self.view addSubview:self.secondTableView];
     
     //read speakers from Core Data
@@ -114,13 +119,10 @@
     NSURL *speakerImageURL = [[NSURL alloc] initWithString:speakerimageURLString];
     NSData *speakerImageData = [[NSData alloc] initWithContentsOfURL:speakerImageURL];
     UIImage *speakerUIImage = [UIImage imageWithData:speakerImageData];
-    UIImageView *imageViewInCell = [[UIImageView alloc] initWithImage:speakerUIImage];
-//    imageViewInCell.contentMode = UIViewContentModeScaleToFill;
-//    imageViewInCell = (UIImageView *) [cell viewWithTag:0];
-//    imageViewInCell.image = speakerUIImage;
-    imageViewInCell.frame = CGRectMake(0, 0, 30, 40);
-    cell.accessoryView = imageViewInCell;
-        
+    UIImageView *speakerImageView = [[UIImageView alloc] initWithFrame:CGRectMake(15, 8, 30, 40)];
+    speakerImageView.image = speakerUIImage;
+    [cell addSubview:speakerImageView];
+    
     UILabel *label;
     label = (UILabel *)[cell viewWithTag:1];
     label.text = [[self.speakerArray objectAtIndex:indexPath.row] name];
@@ -137,7 +139,14 @@
 - (void) tableView:(UITableView *)tableView
 didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    
+    if ([tableView isEqual:self.secondTableView])
+    {
+        SecondSecondViewController *secondSecondViewController = [[SecondSecondViewController alloc]
+                                                                  initWithNibName:nil
+                                                                  bundle:NULL];
+        [self.navigationController pushViewController:secondSecondViewController
+                                             animated:YES];
+    }
 }
 
 - (void)viewDidUnload

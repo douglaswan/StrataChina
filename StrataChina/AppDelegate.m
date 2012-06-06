@@ -289,7 +289,8 @@
                                nil];
     
     self.tabBarController = [[UITabBarController alloc] init];
-    [self.tabBarController setViewControllers:navControllers];
+    [self.tabBarController setViewControllers:navControllers
+                                     animated:YES];
     
     [self.window addSubview:self.tabBarController.view];
     

@@ -41,7 +41,7 @@
                                            forBarMetrics:UIBarMetricsDefault];
         self.navigationItem.title = nil;
         
-        UIBarButtonItem *backButton = [[UIBarButtonItem alloc] initWithTitle:@"home"
+        UIBarButtonItem *backButton = [[UIBarButtonItem alloc] initWithTitle:@"Back"
                                                                        style:UIBarButtonItemStylePlain
                                                                       target:self
                                                                       action:nil];
@@ -57,7 +57,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     
-    self.firstTableView = [[UITableView alloc] initWithFrame:self.view.bounds
+    self.firstTableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, 320, 368)
                                                        style:UITableViewStylePlain];
     
     self.firstTableView.rowHeight = 64;
@@ -65,11 +65,6 @@
     
     self.firstTableView.dataSource = self;
     self.firstTableView.delegate = self;
-    
-    //prevent the Tab bar covering the last cell of the tableView.
-    UIView *footer = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 1, 90)];
-    footer.backgroundColor = [UIColor clearColor];
-    self.firstTableView.tableFooterView = footer;
     
     [self.view addSubview:self.firstTableView];
     
@@ -138,7 +133,8 @@
 - (void) tableView:(UITableView *)tableView
 didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    if ([tableView isEqual:self.firstTableView]) {
+    if ([tableView isEqual:self.firstTableView]) 
+    {
         //NSLog(@"%@", [NSString stringWithFormat:@"Cell %ld in Section %ld is selected",
         //              (long)indexPath.row, (long)indexPath.section]);
         

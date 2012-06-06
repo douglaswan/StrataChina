@@ -13,6 +13,8 @@
 		A52657C0156B851D003B724F /* layout.png in Resources */ = {isa = PBXBuildFile; fileRef = A52657BF156B851D003B724F /* layout.png */; };
 		A53A97AA15735BC80071CEDD /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A53A97A815735BC80071CEDD /* Model.xcdatamodeld */; };
 		A53A97AD15735BE50071CEDD /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A53A97AC15735BE50071CEDD /* CoreData.framework */; };
+		A540E071157F8E3E0009EBD4 /* SecondSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A540E06F157F8E3E0009EBD4 /* SecondSecondViewController.m */; };
+		A540E072157F8E3E0009EBD4 /* SecondSecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A540E070157F8E3E0009EBD4 /* SecondSecondViewController.xib */; };
 		A54D7FE815653CF100F46723 /* scheduleTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A54D7FE715653CF100F46723 /* scheduleTableCell.xib */; };
 		A55118701561F5AE000D84ED /* 137-presentation.png in Resources */ = {isa = PBXBuildFile; fileRef = A551186F1561F5AE000D84ED /* 137-presentation.png */; };
 		A55118731561F689000D84ED /* 145-persondot.png in Resources */ = {isa = PBXBuildFile; fileRef = A55118721561F689000D84ED /* 145-persondot.png */; };
@@ -52,6 +54,9 @@
 		A52657BF156B851D003B724F /* layout.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = layout.png; sourceTree = "<group>"; };
 		A53A97A915735BC80071CEDD /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		A53A97AC15735BE50071CEDD /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		A540E06E157F8E3D0009EBD4 /* SecondSecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SecondSecondViewController.h; path = ../SecondSecondViewController.h; sourceTree = "<group>"; };
+		A540E06F157F8E3E0009EBD4 /* SecondSecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SecondSecondViewController.m; path = ../SecondSecondViewController.m; sourceTree = "<group>"; };
+		A540E070157F8E3E0009EBD4 /* SecondSecondViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SecondSecondViewController.xib; path = ../SecondSecondViewController.xib; sourceTree = "<group>"; };
 		A54D7FE715653CF100F46723 /* scheduleTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = scheduleTableCell.xib; sourceTree = "<group>"; };
 		A551186F1561F5AE000D84ED /* 137-presentation.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "137-presentation.png"; sourceTree = "<group>"; };
 		A55118721561F689000D84ED /* 145-persondot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "145-persondot.png"; sourceTree = "<group>"; };
@@ -164,8 +169,11 @@
 				A5FCFDEC155A563900F7742C /* FirstSecondViewController.xib */,
 				A5AB65B2155968450056A410 /* SecondRootViewController.h */,
 				A5AB65B3155968450056A410 /* SecondRootViewController.m */,
-				A56C6CED157A0BBD0032743A /* speakerTableCell.xib */,
 				A5AB65B4155968450056A410 /* SecondRootViewController.xib */,
+				A540E06E157F8E3D0009EBD4 /* SecondSecondViewController.h */,
+				A540E06F157F8E3E0009EBD4 /* SecondSecondViewController.m */,
+				A540E070157F8E3E0009EBD4 /* SecondSecondViewController.xib */,
+				A56C6CED157A0BBD0032743A /* speakerTableCell.xib */,
 				A52657B6156B69CD003B724F /* ThirdRootViewController.h */,
 				A52657B7156B69CD003B724F /* ThirdRootViewController.m */,
 				A52657B8156B69CD003B724F /* ThirdRootViewController.xib */,
@@ -259,6 +267,7 @@
 				A57766991576180F00050843 /* bg_cell_gradient_large.png in Resources */,
 				A564CB8A15773A27009E1B5A /* shareButton.png in Resources */,
 				A56C6CEE157A0BBD0032743A /* speakerTableCell.xib in Resources */,
+				A540E072157F8E3E0009EBD4 /* SecondSecondViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,6 +288,7 @@
 				A53A97AA15735BC80071CEDD /* Model.xcdatamodeld in Sources */,
 				A5AB51241573ACD0005756A3 /* Sessions.m in Sources */,
 				A56C6CEB1578FB2F0032743A /* Speakers.m in Sources */,
+				A540E071157F8E3E0009EBD4 /* SecondSecondViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

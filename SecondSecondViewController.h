@@ -10,4 +10,10 @@
 
 @interface SecondSecondViewController : UIViewController
 
+@property (nonatomic, retain) IBOutlet UIImageView *speakerPhoto;
+@property (nonatomic, retain) IBOutlet UILabel *speakerName;
+@property (nonatomic, retain) IBOutlet UILabel *speakerTitleandEmployer;
+@property (nonatomic, retain) IBOutlet UIWebView *speakerAutobio;
+@property (nonatomic, retain) IBOutlet UILabel *speakerSessions;
+
 @end

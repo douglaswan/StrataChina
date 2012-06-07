@@ -115,11 +115,10 @@
     
     NSMutableString *speakerimageURLString = [[NSMutableString alloc] initWithString:@"http://localhost/webProjects/strata/trunk/strata2012/public/images/"];
     [speakerimageURLString appendString:[[self.speakerArray objectAtIndex:indexPath.row] photo_filename]];
-    
     NSURL *speakerImageURL = [[NSURL alloc] initWithString:speakerimageURLString];
     NSData *speakerImageData = [[NSData alloc] initWithContentsOfURL:speakerImageURL];
     UIImage *speakerUIImage = [UIImage imageWithData:speakerImageData];
-    UIImageView *speakerImageView = [[UIImageView alloc] initWithFrame:CGRectMake(15, 8, 30, 40)];
+    UIImageView *speakerImageView = [[UIImageView alloc] initWithFrame:CGRectMake(15, 6, 30, 40)];
     speakerImageView.image = speakerUIImage;
     [cell addSubview:speakerImageView];
     
@@ -146,6 +145,21 @@ didSelectRowAtIndexPath:(NSIndexPath *)indexPath
                                                                   bundle:NULL];
         [self.navigationController pushViewController:secondSecondViewController
                                              animated:YES];
+        
+        NSMutableString *speakerimageURLString = [[NSMutableString alloc] initWithString:@"http://localhost/webProjects/strata/trunk/strata2012/public/images/"];
+        [speakerimageURLString appendString:[[self.speakerArray objectAtIndex:indexPath.row] photo_filename]];
+        NSURL *speakerImageURL = [[NSURL alloc] initWithString:speakerimageURLString];
+        NSData *speakerImageData = [[NSData alloc] initWithContentsOfURL:speakerImageURL];
+        UIImage *speakerUIImage = [UIImage imageWithData:speakerImageData];
+        secondSecondViewController.speakerPhoto.image = speakerUIImage;
+        
+        secondSecondViewController.speakerName.text = [NSString stringWithString:[[self.speakerArray objectAtIndex:indexPath.row] name]];
+        secondSecondViewController.speakerSessions.text = [NSString stringWithString:[[self.speakerArray objectAtIndex:indexPath.row] session]];
+        NSData *autobioData = [[[self.speakerArray objectAtIndex:indexPath.row] autobio] dataUsingEncoding:NSUTF8StringEncoding];
+        [secondSecondViewController.speakerAutobio loadData:autobioData
+                                                   MIMEType:@"text/html"
+                                           textEncodingName:@"UTF-8"
+                                                    baseURL:nil];
     }
 }
 

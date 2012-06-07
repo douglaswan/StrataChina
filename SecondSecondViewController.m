@@ -14,6 +14,12 @@
 
 @implementation SecondSecondViewController
 
+@synthesize speakerPhoto;
+@synthesize speakerName;
+@synthesize speakerTitleandEmployer;
+@synthesize speakerAutobio;
+@synthesize speakerSessions;
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
